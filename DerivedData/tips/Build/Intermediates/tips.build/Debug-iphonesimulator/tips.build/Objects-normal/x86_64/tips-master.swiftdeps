@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "1365f68d5f913b29c109ef43c61e2277"
+build_time: [502934438, 890883000]
+inputs:
+  "/Users/Takashi/Documents/codepath/tips/tips/AppDelegate.swift": [502933379, 0]
+  "/Users/Takashi/Documents/codepath/tips/tips/ViewController.swift": [502934433, 0]
