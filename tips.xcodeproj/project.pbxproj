@@ -14,6 +14,7 @@
 		1646CA2E1C17A283005087AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1646CA2C1C17A283005087AD /* LaunchScreen.storyboard */; };
 		1646CA391C17A283005087AD /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CA381C17A283005087AD /* tipsTests.swift */; };
 		1646CA441C17A283005087AD /* tipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1646CA431C17A283005087AD /* tipsUITests.swift */; };
+		169548491C17D24A00B42314 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169548481C17D24A00B42314 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1646CA3F1C17A283005087AD /* tipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1646CA431C17A283005087AD /* tipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsUITests.swift; sourceTree = "<group>"; };
 		1646CA451C17A283005087AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169548481C17D24A00B42314 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		1646CA221C17A283005087AD /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				169548481C17D24A00B42314 /* SettingsViewController.swift */,
 				1646CA231C17A283005087AD /* AppDelegate.swift */,
 				1646CA251C17A283005087AD /* ViewController.swift */,
 				1646CA271C17A283005087AD /* Main.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				1646CA261C17A283005087AD /* ViewController.swift in Sources */,
 				1646CA241C17A283005087AD /* AppDelegate.swift in Sources */,
+				169548491C17D24A00B42314 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

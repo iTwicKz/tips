@@ -107,18 +107,56 @@ SWIFT_CLASS("_TtC4tips11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UITextField;
+@class UIPickerView;
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC4tips22SettingsViewController")
+@interface SettingsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerDataSource;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified minPicker;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified defaultPicker;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified maxPicker;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __null_unspecified)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
+@class UITextField;
+@class UISegmentedControl;
+@class UISlider;
+@class UIView;
+
 SWIFT_CLASS("_TtC4tips14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic) float sliderValue;
+@property (nonatomic) float defaultPercent;
+@property (nonatomic) BOOL opened;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tipLabel;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified billField;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified totalLabel;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified tipControl;
+@property (nonatomic, weak) IBOutlet UISlider * __null_unspecified tipSlider;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified controlPanel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tipPercentLabel;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (void)configureDefaultSlider;
+- (IBAction)onEditingChanged:(id __nonnull)sender;
+- (IBAction)offKeyTap:(id __nonnull)sender;
+- (IBAction)onTap:(id __nonnull)sender;
+- (IBAction)billEdited:(id __nonnull)sender;
+- (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
