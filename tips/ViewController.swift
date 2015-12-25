@@ -32,9 +32,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var segControl: UISegmentedControl!
     
+    @IBOutlet weak var serviceLabel: UILabel!
     @IBOutlet weak var TwoPrice: UILabel!
     @IBOutlet weak var ThreeOrice: UILabel!
     @IBOutlet weak var FourPrice: UILabel!
+    @IBOutlet weak var smileIcone: UIImageView!
+    @IBOutlet weak var frownIcon: UIImageView!
+    @IBOutlet weak var segmentLabel: UILabel!
+    @IBOutlet weak var segmentedTips: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,11 +64,57 @@ class ViewController: UIViewController {
         tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
         tipSlider.tag = 1
         billField.tag = 2
+        
+//        let hideSlider = defaults.boolForKey("StringHide")
+//        if(hideSlider){
+//            tipSlider.hidden = true
+//        }
+//        else{
+//            tipSlider.hidden = false
+//        }
+        
+        
+        // 1
+        var nav = self.navigationController?.navigationBar
+        // 2
+        nav?.barStyle = UIBarStyle.Black
+        nav?.tintColor = UIColor.greenColor()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        // 4
+        let image = UIImage(named: "Apple_Swift_Logo")
+        imageView.image = image
+        // 5
+        navigationItem.titleView = imageView
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         print("view will appear")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let hideSlider = defaults.boolForKey("SliderHide")
+        if(hideSlider){
+            tipSlider.hidden = false
+            smileIcone.hidden = false
+            frownIcon.hidden = false
+            serviceLabel.hidden = false
+            segmentedTips.hidden = true
+            segmentLabel.hidden = true
+        }
+        else{
+            tipSlider.hidden = true
+            smileIcone.hidden = true
+            frownIcon.hidden = true
+            serviceLabel.hidden = true
+            segmentedTips.hidden = false
+            segmentLabel.hidden = false
+
+        }
+        
+        
+    }
+    @IBAction func priceInputed(sender: AnyObject) {
         
     }
     
@@ -77,21 +128,64 @@ class ViewController: UIViewController {
             defaultPercent = Float(defaults.integerForKey("Default"))/100.0
             tipSlider.value = defaultPercent
             tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
+            
+            
+            
+            var tipPercentage = Double(defaultPercent)
+            var billAmount = 0.0
+            if(billField.text == ""){
+                billAmount = 0.0    }
+            else{
+                billAmount = Double(billField.text!)!
+            }
+            
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+            //        formatter.locale = NSLocale(localeIdentifier: "ja_JP")
+            
+            print(formatter.stringFromNumber(billAmount))
+            //        billField.text = formatter.stringFromNumber(billAmount)!
+            
+            var tip = billAmount * tipPercentage
+            var total = billAmount + tip
+            
+            
+            tipLabel.text = formatter.stringFromNumber(tip)
+            totalLabel.text = formatter.stringFromNumber(total)
+            TwoPrice.text = formatter.stringFromNumber(total/2)
+            ThreeOrice.text = formatter.stringFromNumber(total/3)
+            FourPrice.text = formatter.stringFromNumber(total/4)
+            
+
         }
    
         tipSlider.minimumValue = Float(defaults.integerForKey("Minimum"))/100.0
         tipSlider.maximumValue = Float(defaults.integerForKey("Maximum"))/100.0
         tipSlider.tag = 1
+        
+
+
+
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         print("view will disappear")
+
+
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         print("view did disappear")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let hideSlider = defaults.boolForKey("SliderHide")
+        if(hideSlider){
+            tipSlider.hidden = true
+        }
+        else{
+            tipSlider.hidden = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -110,6 +204,9 @@ class ViewController: UIViewController {
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         print("User editing bill")
+        
+        
+        
         
 //        if(sender.tag == 2){
 //            var tipArray = [18, 2, 22]
@@ -137,7 +234,10 @@ class ViewController: UIViewController {
         print("\(sliderValue)")
         tipPercentLabel.text = String(format: "%.0f %@", sliderValue*100, "%")
         configureDefaultSlider()
-        }
+            
+  }
+        
+
         
 
         
@@ -154,17 +254,26 @@ class ViewController: UIViewController {
         else{
             billAmount = Double(billField.text!)!
         }
+        
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+//        formatter.locale = NSLocale(localeIdentifier: "ja_JP")
+
+        print(formatter.stringFromNumber(billAmount))
+//        billField.text = formatter.stringFromNumber(billAmount)!
+        
         var tip = billAmount * tipPercentage
         var total = billAmount + tip
         
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
-        TwoPrice.text = String(format: "$%.2f", total/2)
-        ThreeOrice.text = String(format: "$%.2f", total/3)
-        FourPrice.text = String(format: "$%.2f", total/4)
+        tipLabel.text = formatter.stringFromNumber(tip)
+        totalLabel.text = formatter.stringFromNumber(total)
+        TwoPrice.text = formatter.stringFromNumber(total/2)
+        ThreeOrice.text = formatter.stringFromNumber(total/3)
+        FourPrice.text = formatter.stringFromNumber(total/4)
         
     }
+    
     
     @IBAction func offKeyTap(sender: AnyObject) {
          print("HEY HEY HEY")

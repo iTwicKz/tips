@@ -108,6 +108,7 @@ SWIFT_CLASS("_TtC4tips11AppDelegate")
 @end
 
 @class UIPickerView;
+@class UISwitch;
 @class NSBundle;
 @class NSCoder;
 
@@ -117,12 +118,17 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified minPicker;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified defaultPicker;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified maxPicker;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified sliderSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified segmentedSwitch;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * __null_unspecified)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (IBAction)sliderSwitchPressed:(id __nonnull)sender;
+- (IBAction)segmentedSwitchPressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -132,6 +138,7 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 @class UISegmentedControl;
 @class UISlider;
 @class UIView;
+@class UIImageView;
 
 SWIFT_CLASS("_TtC4tips14ViewController")
 @interface ViewController : UIViewController
@@ -145,8 +152,18 @@ SWIFT_CLASS("_TtC4tips14ViewController")
 @property (nonatomic, weak) IBOutlet UISlider * __null_unspecified tipSlider;
 @property (nonatomic, weak) IBOutlet UIView * __null_unspecified controlPanel;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tipPercentLabel;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segControl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified serviceLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified TwoPrice;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified ThreeOrice;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified FourPrice;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified smileIcone;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified frownIcon;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified segmentLabel;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedTips;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (IBAction)priceInputed:(id __nonnull)sender;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
@@ -156,6 +173,7 @@ SWIFT_CLASS("_TtC4tips14ViewController")
 - (IBAction)offKeyTap:(id __nonnull)sender;
 - (IBAction)onTap:(id __nonnull)sender;
 - (IBAction)billEdited:(id __nonnull)sender;
+- (IBAction)segmentSelected:(id __nonnull)sender;
 - (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

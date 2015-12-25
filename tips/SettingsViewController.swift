@@ -21,6 +21,12 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBOutlet weak var maxPicker: UIPickerView!
     
+    @IBOutlet weak var sliderSwitch: UISwitch!
+    
+    @IBOutlet weak var segmentedSwitch: UISwitch!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,12 +52,41 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         minPicker.selectRow(minRow, inComponent: 0, animated: true)
         maxPicker.selectRow(maxRow, inComponent: 0, animated: true)
         defaultPicker.selectRow(defaultRow, inComponent: 0, animated: true)
-    
-
+//        if(defaults.boolForKey("SliderHide")){
+        
+//        sliderSwitch.on = defaults.boolForKey("SliderHide")
+//        }
+//        else{
+//        segmentedSwitch.on = defaults.boolForKey("SegmentedHide")
+//        }
+        
+//
+//        let hue = CGFloat(minRow)/CGFloat(pickerDataSource.count)
+        
+        defaults.synchronize()
+//        minPicker.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness:1.0, alpha: 1.0)
+//
+//        
         
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let defaults = NSUserDefaults.standardUserDefaults()
+
+        if(defaults.boolForKey("SliderHide")){
+            sliderSwitch.on = defaults.boolForKey("SliderHide")
+        }
+        else{
+            segmentedSwitch.on = defaults.boolForKey("SegmentedHide")
+        }
+        
+        defaults.synchronize()
+
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -118,6 +153,44 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         defaults.synchronize()
     }
+    
+    @IBAction func sliderSwitchPressed(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setBool(sliderSwitch.on, forKey: "SliderHide")
+      
+        
+        if(!defaults.boolForKey("SliderHide")){
+            segmentedSwitch.setOn(true, animated: true)
+        }
+        else{
+            segmentedSwitch.setOn(false, animated: true)
+        }
+        defaults.setBool(segmentedSwitch.on, forKey: "SegmentedHide")
+
+        defaults.synchronize()
+    }
+    
+
+    @IBAction func segmentedSwitchPressed(sender: AnyObject) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setBool(segmentedSwitch.on, forKey: "SegmentedHide")
+      
+        
+        if(!defaults.boolForKey("SegmentedHide")){
+            sliderSwitch.setOn(true, animated: true)
+        }
+        else{
+            sliderSwitch.setOn(false, animated: true)
+        }
+        
+        defaults.setBool(sliderSwitch.on, forKey: "SliderHide")
+        
+        defaults.synchronize()
+    }
+    
     
     //-------
     
