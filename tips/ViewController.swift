@@ -64,6 +64,7 @@ class ViewController: UIViewController {
         tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
         tipSlider.tag = 1
         billField.tag = 2
+        segmentedTips.tag = 3
         
 //        let hideSlider = defaults.boolForKey("StringHide")
 //        if(hideSlider){
@@ -213,6 +214,16 @@ class ViewController: UIViewController {
 //            sliderValue = Float(tipArray[tipControl.selectedSegmentIndex])
 //            print(sliderValue)
 //        }
+        
+        if(sender.tag == 3){
+            print("HHHAEHIAEHIHFIHEIFHIEHF")
+            var tipArray = [18, 20, 22]
+            sliderValue = Float(tipArray[segmentedTips.selectedSegmentIndex])/100
+            print("\(sliderValue)")
+            tipPercentLabel.text = String(format: "%.0f %@", sliderValue*100, "%")
+//            configureDefaultSlider()
+        }
+        
         if(sender.tag == 2){
         print("Yo!")
         self.controlPanel.alpha = 1
@@ -235,7 +246,7 @@ class ViewController: UIViewController {
         tipPercentLabel.text = String(format: "%.0f %@", sliderValue*100, "%")
         configureDefaultSlider()
             
-  }
+        }
         
 
         

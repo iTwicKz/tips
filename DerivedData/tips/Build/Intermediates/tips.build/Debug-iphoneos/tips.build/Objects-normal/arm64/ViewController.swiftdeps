@@ -6,73 +6,74 @@ provides-nominal:
 provides-member:
 - ["C4tips14ViewController", ""]
 provides-dynamic-lookup:
-- "smileIcone"
-- "segmentSelected"
-- "dismissKeyboard"
-- "totalLabel"
-- "opened"
-- "ThreeOrice"
-- "tipSlider"
-- "onEditingChanged"
 - "controlPanel"
-- "segmentLabel"
-- "TwoPrice"
-- "sliderValue"
-- "viewWillAppear"
-- "offKeyTap"
-- "tipLabel"
-- "segControl"
-- "priceInputed"
-- "viewDidLoad"
-- "serviceLabel"
-- "viewWillDisappear"
-- "didReceiveMemoryWarning"
-- "billEdited"
-- "FourPrice"
-- "viewDidDisappear"
-- "configureDefaultSlider"
-- "defaultPercent"
-- "tipControl"
-- "onTap"
-- "viewDidAppear"
+- "dismissKeyboard"
 - "segmentedTips"
+- "frownIcon"
+- "sliderValue"
+- "serviceLabel"
+- "tipLabel"
+- "totalLabel"
+- "viewDidLoad"
+- "viewDidAppear"
+- "opened"
+- "FourPrice"
+- "tipSlider"
+- "segmentLabel"
+- "offKeyTap"
+- "segmentSelected"
+- "onTap"
+- "TwoPrice"
 - "tipPercentLabel"
 - "billField"
-- "frownIcon"
+- "viewDidDisappear"
+- "didReceiveMemoryWarning"
+- "priceInputed"
+- "segControl"
+- "defaultPercent"
+- "smileIcone"
+- "onEditingChanged"
+- "configureDefaultSlider"
+- "viewWillAppear"
+- "viewWillDisappear"
+- "tipControl"
+- "billEdited"
+- "ThreeOrice"
 depends-top-level:
-- !private "NSNumberFormatter"
-- !private "NSUserDefaults"
-- !private "*"
-- "AnyObject"
-- !private "UIImage"
-- "UISlider"
-- "UIImageView"
-- "UIViewController"
-- !private "round"
-- "BooleanLiteralType"
-- !private "UIColor"
-- !private "!="
 - !private "NSNumberFormatterStyle"
-- !private "print"
 - "Float"
-- !private "-"
-- !private "StringLiteralType"
-- "UISegmentedControl"
-- "Bool"
-- "UILabel"
-- "UIView"
-- !private "CGPointMake"
+- !private "UIImage"
+- !private "round"
+- !private "print"
 - !private "UITapGestureRecognizer"
-- !private "UnicodeScalarType"
-- "UITextField"
-- !private "UIBarStyle"
+- "BooleanLiteralType"
+- !private "*"
 - !private "CGRect"
 - !private "+"
-- !private "String"
-- !private "=="
+- "UIViewController"
+- "UISlider"
 - !private "/"
-- "ViewController"
+- "AnyObject"
+- !private "UIBarStyle"
+- "UITextField"
+- !private "StringLiteralType"
+- !private "String"
+- !private "UnicodeScalarType"
+- !private "NSNumberFormatter"
 - !private "Double"
+- !private "Array"
+- "Bool"
+- !private "-"
+- "ViewController"
+- "UISegmentedControl"
+- !private "CGPointMake"
+- !private "NSUserDefaults"
+- "UIView"
+- !private "=="
+- "UILabel"
+- !private "UIColor"
+- !private "!="
+- "UIImageView"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGPointMake"]
@@ -131,6 +132,7 @@ depends-member:
 - ["PSs9AnyObject", "segmentLabel"]
 - ["PSs9AnyObject", "segmentSelected"]
 - ["PSs9AnyObject", "segmentedTips"]
+- !private ["PSs9AnyObject", "selectedSegmentIndex"]
 - ["PSs9AnyObject", "serviceLabel"]
 - ["PSs9AnyObject", "sliderValue"]
 - ["PSs9AnyObject", "smileIcone"]
@@ -153,6 +155,17 @@ depends-member:
 - ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "viewWillDisappear"]
 - ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -218,6 +231,7 @@ depends-member:
 - ["PSs11CVarArgType", "segmentLabel"]
 - ["PSs11CVarArgType", "segmentSelected"]
 - ["PSs11CVarArgType", "segmentedTips"]
+- !private ["PSs11CVarArgType", "selectedSegmentIndex"]
 - ["PSs11CVarArgType", "serviceLabel"]
 - ["PSs11CVarArgType", "sliderValue"]
 - ["PSs11CVarArgType", "smileIcone"]
@@ -241,17 +255,32 @@ depends-member:
 - ["PSs11CVarArgType", "viewWillDisappear"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "CGPointMake"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
 - !private ["PSs23CustomStringConvertible", "Double"]
+- !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "Float"]
 - ["PSs23CustomStringConvertible", "FourPrice"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "NSNumberFormatter"]
 - !private ["PSs23CustomStringConvertible", "NSNumberFormatterStyle"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
 - ["PSs23CustomStringConvertible", "ThreeOrice"]
 - ["PSs23CustomStringConvertible", "TwoPrice"]
 - !private ["PSs23CustomStringConvertible", "UIBarStyle"]
@@ -300,11 +329,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "segmentLabel"]
 - ["PSs23CustomStringConvertible", "segmentSelected"]
 - ["PSs23CustomStringConvertible", "segmentedTips"]
+- !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
 - ["PSs23CustomStringConvertible", "serviceLabel"]
 - ["PSs23CustomStringConvertible", "sliderValue"]
 - ["PSs23CustomStringConvertible", "smileIcone"]
 - !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "stringFromNumber"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "tag"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "tintColor"]
@@ -384,6 +415,7 @@ depends-member:
 - ["PSs9Equatable", "segmentLabel"]
 - ["PSs9Equatable", "segmentSelected"]
 - ["PSs9Equatable", "segmentedTips"]
+- !private ["PSs9Equatable", "selectedSegmentIndex"]
 - ["PSs9Equatable", "serviceLabel"]
 - ["PSs9Equatable", "sliderValue"]
 - ["PSs9Equatable", "smileIcone"]
@@ -413,6 +445,7 @@ depends-member:
 - !private ["Sf", "init"]
 - !private ["PSs23FloatLiteralConvertible", "init"]
 - !private ["PSs17FloatingPointType", "init"]
+- !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "Black"]
 - !private ["PSs8Hashable", "CGPointMake"]
 - !private ["PSs8Hashable", "CGRect"]
@@ -473,6 +506,7 @@ depends-member:
 - ["PSs8Hashable", "segmentLabel"]
 - ["PSs8Hashable", "segmentSelected"]
 - ["PSs8Hashable", "segmentedTips"]
+- !private ["PSs8Hashable", "selectedSegmentIndex"]
 - ["PSs8Hashable", "serviceLabel"]
 - ["PSs8Hashable", "sliderValue"]
 - ["PSs8Hashable", "smileIcone"]
@@ -495,6 +529,13 @@ depends-member:
 - ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "viewWillDisappear"]
 - ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "deinit"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
@@ -502,6 +543,21 @@ depends-member:
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CGPointMake"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "Double"]
@@ -556,6 +612,7 @@ depends-member:
 - ["PSo8NSCoding", "segmentLabel"]
 - ["PSo8NSCoding", "segmentSelected"]
 - ["PSo8NSCoding", "segmentedTips"]
+- !private ["PSo8NSCoding", "selectedSegmentIndex"]
 - ["PSo8NSCoding", "serviceLabel"]
 - ["PSo8NSCoding", "sliderValue"]
 - ["PSo8NSCoding", "smileIcone"]
@@ -706,6 +763,7 @@ depends-member:
 - ["CSo8NSObject", "segmentLabel"]
 - ["CSo8NSObject", "segmentSelected"]
 - ["CSo8NSObject", "segmentedTips"]
+- !private ["CSo8NSObject", "selectedSegmentIndex"]
 - ["CSo8NSObject", "serviceLabel"]
 - ["CSo8NSObject", "sliderValue"]
 - ["CSo8NSObject", "smileIcone"]
@@ -783,6 +841,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "segmentLabel"]
 - ["PSo16NSObjectProtocol", "segmentSelected"]
 - ["PSo16NSObjectProtocol", "segmentedTips"]
+- !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
 - ["PSo16NSObjectProtocol", "serviceLabel"]
 - ["PSo16NSObjectProtocol", "sliderValue"]
 - ["PSo16NSObjectProtocol", "smileIcone"]
@@ -814,11 +873,26 @@ depends-member:
 - !private ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Black"]
 - !private ["PSs16RawRepresentable", "CurrencyStyle"]
 - !private ["PSs16RawRepresentable", "ScaleAspectFit"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs16SignedNumberType", "init"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "init"]
 - !private ["SS", "deinit"]
@@ -838,6 +912,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "maximumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
+- !private ["PSo29UIAccessibilityIdentification", "selectedSegmentIndex"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
@@ -855,6 +930,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "maximumValue"]
 - !private ["PSo12UIAppearance", "minimumValue"]
+- !private ["PSo12UIAppearance", "selectedSegmentIndex"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "tintColor"]
@@ -911,6 +987,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "segmentLabel"]
 - ["PSo21UIAppearanceContainer", "segmentSelected"]
 - ["PSo21UIAppearanceContainer", "segmentedTips"]
+- !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
 - ["PSo21UIAppearanceContainer", "serviceLabel"]
 - ["PSo21UIAppearanceContainer", "sliderValue"]
 - ["PSo21UIAppearanceContainer", "smileIcone"]
@@ -995,6 +1072,7 @@ depends-member:
 - !private ["CSo9UIControl", "hidden"]
 - !private ["CSo9UIControl", "maximumValue"]
 - !private ["CSo9UIControl", "minimumValue"]
+- !private ["CSo9UIControl", "selectedSegmentIndex"]
 - !private ["CSo9UIControl", "tag"]
 - !private ["CSo9UIControl", "text"]
 - !private ["CSo9UIControl", "value"]
@@ -1011,6 +1089,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "maximumValue"]
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
+- !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
@@ -1028,6 +1107,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "maximumValue"]
 - !private ["PSo13UIDynamicItem", "minimumValue"]
+- !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
@@ -1084,6 +1164,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "segmentLabel"]
 - ["PSo18UIFocusEnvironment", "segmentSelected"]
 - ["PSo18UIFocusEnvironment", "segmentedTips"]
+- !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
 - ["PSo18UIFocusEnvironment", "serviceLabel"]
 - ["PSo18UIFocusEnvironment", "sliderValue"]
 - ["PSo18UIFocusEnvironment", "smileIcone"]
@@ -1177,6 +1258,7 @@ depends-member:
 - ["CSo11UIResponder", "segmentLabel"]
 - ["CSo11UIResponder", "segmentSelected"]
 - ["CSo11UIResponder", "segmentedTips"]
+- !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - ["CSo11UIResponder", "serviceLabel"]
 - ["CSo11UIResponder", "sliderValue"]
 - ["CSo11UIResponder", "smileIcone"]
@@ -1196,6 +1278,8 @@ depends-member:
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["CSo18UISegmentedControl", "hidden"]
+- !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
+- !private ["CSo18UISegmentedControl", "tag"]
 - !private ["CSo8UISlider", "continuous"]
 - !private ["CSo8UISlider", "hidden"]
 - !private ["CSo8UISlider", "maximumValue"]
@@ -1322,6 +1406,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "segmentLabel"]
 - ["PSo18UITraitEnvironment", "segmentSelected"]
 - ["PSo18UITraitEnvironment", "segmentedTips"]
+- !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
 - ["PSo18UITraitEnvironment", "serviceLabel"]
 - ["PSo18UITraitEnvironment", "sliderValue"]
 - ["PSo18UITraitEnvironment", "smileIcone"]
@@ -1354,6 +1439,7 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "maximumValue"]
 - !private ["CSo6UIView", "minimumValue"]
+- !private ["CSo6UIView", "selectedSegmentIndex"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "tintColor"]
@@ -1487,6 +1573,11 @@ depends-member:
 - ["C4tips14ViewController", "viewDidLoad"]
 - ["C4tips14ViewController", "viewWillAppear"]
 - ["C4tips14ViewController", "viewWillDisappear"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs31_BuiltinFloatLiteralConvertible", "init"]
@@ -1498,10 +1589,24 @@ depends-member:
 - !private ["PSs22_CVarArgPassedAsDouble", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_ColorLiteralConvertible", "greenColor"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addGestureRecognizer"]
 - !private ["PSs12_Reflectable", "alpha"]
@@ -1516,6 +1621,8 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "maximumValue"]
 - !private ["PSs12_Reflectable", "minimumValue"]
+- !private ["PSs12_Reflectable", "selectedSegmentIndex"]
+- !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "tintColor"]
@@ -1526,6 +1633,8 @@ depends-member:
 depends-nominal:
 - !private "PSs16AbsoluteValuable"
 - "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
@@ -1534,6 +1643,7 @@ depends-nominal:
 - !private "VSC6CGRect"
 - "PSs11CVarArgType"
 - !private "VSs9Character"
+- !private "PSs14CollectionType"
 - !private "PSs10Comparable"
 - !private "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
@@ -1543,7 +1653,10 @@ depends-nominal:
 - !private "Sf"
 - !private "PSs23FloatLiteralConvertible"
 - !private "PSs17FloatingPointType"
+- !private "PSs13GeneratorType"
 - "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
 - !private "Si"
 - !private "VSs5Int16"
 - !private "VSs5Int32"
@@ -1551,6 +1664,9 @@ depends-nominal:
 - !private "VSs4Int8"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -1565,9 +1681,12 @@ depends-nominal:
 - !private "CSo14NSUserDefaults"
 - !private "Sq"
 - !private "PSs16OutputStreamType"
+- !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
 - !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
 - !private "PSs10Streamable"
 - !private "PSs10Strideable"
 - !private "SS"
@@ -1612,6 +1731,7 @@ depends-nominal:
 - !private "Sc"
 - !private "PSs31UnicodeScalarLiteralConvertible"
 - "C4tips14ViewController"
+- !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs31_BuiltinFloatLiteralConvertible"
@@ -1623,14 +1743,15 @@ depends-nominal:
 - !private "PSs22_CVarArgPassedAsDouble"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_ColorLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
 - !private "PSs24_ImageLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "VSs26_OptionalNilComparisonType"
 - !private "PSs12_Reflectable"
 - !private "PSs11_Strideable"
 depends-dynamic-lookup:
-- !private "tag"
 - !private "value"
+- !private "tag"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
