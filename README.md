@@ -30,7 +30,7 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 <a id="video"></a>
 ## **Video Walkthrough**
 ![gif walkthrough](fullVideoCap.gif)
-## HD walkthrough available [on YouTube](https://youtu.be/PGZw1ge-9TI_)
+### HD walkthrough available [on YouTube](https://youtu.be/PGZw1ge-9TI_)
 
 ---
 <a id="screens"></a>
