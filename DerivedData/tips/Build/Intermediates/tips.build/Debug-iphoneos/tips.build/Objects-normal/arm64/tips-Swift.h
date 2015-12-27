@@ -133,6 +133,7 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class UIImageView;
 @class UILabel;
 @class UITextField;
@@ -177,6 +178,7 @@ SWIFT_CLASS("_TtC4tips14ViewController")
 - (IBAction)billEdited:(id __nonnull)sender;
 - (IBAction)segmentSelected:(id __nonnull)sender;
 - (void)dismissKeyboard;
+- (UIColor * __nonnull)UIColorFromRGB:(NSString * __nonnull)colorCode alpha:(float)alpha;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

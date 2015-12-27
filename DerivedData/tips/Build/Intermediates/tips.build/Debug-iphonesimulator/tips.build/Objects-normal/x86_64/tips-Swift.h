@@ -133,18 +133,21 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
+@class UIImageView;
 @class UILabel;
 @class UITextField;
 @class UISegmentedControl;
 @class UISlider;
 @class UIView;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC4tips14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull tipArray;
 @property (nonatomic) float sliderValue;
 @property (nonatomic) float defaultPercent;
 @property (nonatomic) BOOL opened;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified loadImage;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tipLabel;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified billField;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified totalLabel;
@@ -175,6 +178,7 @@ SWIFT_CLASS("_TtC4tips14ViewController")
 - (IBAction)billEdited:(id __nonnull)sender;
 - (IBAction)segmentSelected:(id __nonnull)sender;
 - (void)dismissKeyboard;
+- (UIColor * __nonnull)UIColorFromRGB:(NSString * __nonnull)colorCode alpha:(float)alpha;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

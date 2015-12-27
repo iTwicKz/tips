@@ -6,87 +6,100 @@ provides-nominal:
 provides-member:
 - ["C4tips14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "dismissKeyboard"
-- "ThreeOrice"
-- "tipPercentLabel"
-- "segmentedTips"
-- "billField"
-- "FourPrice"
-- "offKeyTap"
-- "sliderValue"
 - "viewDidAppear"
-- "tipSlider"
-- "TwoPrice"
-- "viewDidDisappear"
-- "controlPanel"
-- "tipArray"
 - "segmentLabel"
-- "billEdited"
-- "serviceLabel"
-- "tipControl"
-- "configureDefaultSlider"
 - "tipLabel"
-- "opened"
+- "sliderValue"
+- "serviceLabel"
+- "tipPercentLabel"
+- "configureDefaultSlider"
+- "tipSlider"
+- "segmentedTips"
+- "tipArray"
 - "viewWillDisappear"
 - "viewWillAppear"
-- "loadImage"
-- "frownIcon"
-- "onEditingChanged"
-- "smileIcone"
-- "totalLabel"
+- "billField"
 - "segmentSelected"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "UIColorFromRGB"
 - "onTap"
+- "controlPanel"
+- "FourPrice"
+- "tipControl"
+- "onEditingChanged"
+- "viewDidDisappear"
 - "priceInputed"
+- "smileIcone"
+- "billEdited"
+- "ThreeOrice"
+- "loadImage"
 - "defaultPercent"
+- "frownIcon"
+- "totalLabel"
+- "opened"
+- "didReceiveMemoryWarning"
 - "segControl"
+- "TwoPrice"
+- "dismissKeyboard"
+- "offKeyTap"
 depends-top-level:
-- !private "UITapGestureRecognizer"
-- "UILabel"
-- !private "=="
-- !private "!"
-- !private "print"
-- "UIView"
-- !private "round"
-- !private "Double"
-- !private "NSNumberFormatter"
-- !private "NSUserDefaults"
-- !private "+"
-- "UISegmentedControl"
-- "UITextField"
-- !private "StringLiteralType"
-- !private "String"
-- "Float"
-- "UIImageView"
-- "ViewController"
 - !private "NSNumberFormatterStyle"
-- !private "UnicodeScalarType"
-- "UISlider"
+- "String"
+- "UIView"
+- !private "=="
+- !private "!="
+- !private ">>"
+- !private "UInt32"
+- !private "CGFloat"
+- !private "Int"
+- "AnyObject"
+- !private "/"
+- "UISegmentedControl"
+- !private "CGRect"
+- !private "Double"
+- !private "UITapGestureRecognizer"
+- "UIImageView"
 - "Bool"
 - !private "UIImage"
-- !private "++"
+- !private "StringLiteralType"
+- !private "NSUserDefaults"
 - "UIViewController"
-- !private "*"
-- "Array"
-- !private "CGRect"
-- "BooleanLiteralType"
-- !private "/"
-- !private "!="
-- "AnyObject"
 - !private "<"
+- "UITextField"
+- !private "NSNumberFormatter"
+- !private "print"
+- !private "UnicodeScalarType"
+- !private "!"
+- !private "round"
+- !private "NSScanner"
+- "UISlider"
+- !private "+"
+- "Float"
+- "UIColor"
+- "ViewController"
+- !private "&"
+- !private "++"
+- "BooleanLiteralType"
+- "Array"
+- "UILabel"
+- !private "*"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
+- !private ["PSs9AnyObject", "CGFloat"]
 - !private ["PSs9AnyObject", "CGRect"]
 - !private ["PSs9AnyObject", "Double"]
 - !private ["PSs9AnyObject", "Float"]
 - ["PSs9AnyObject", "FourPrice"]
+- !private ["PSs9AnyObject", "Int"]
 - !private ["PSs9AnyObject", "NSNumberFormatter"]
 - !private ["PSs9AnyObject", "NSNumberFormatterStyle"]
+- !private ["PSs9AnyObject", "NSScanner"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "String"]
 - ["PSs9AnyObject", "ThreeOrice"]
 - ["PSs9AnyObject", "TwoPrice"]
+- !private ["PSs9AnyObject", "UIColor"]
+- ["PSs9AnyObject", "UIColorFromRGB"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageView"]
 - !private ["PSs9AnyObject", "UITapGestureRecognizer"]
@@ -105,6 +118,7 @@ depends-member:
 - !private ["PSs9AnyObject", "contentMode"]
 - !private ["PSs9AnyObject", "continuous"]
 - ["PSs9AnyObject", "controlPanel"]
+- !private ["PSs9AnyObject", "darkGrayColor"]
 - ["PSs9AnyObject", "defaultPercent"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "dismissKeyboard"]
@@ -128,6 +142,7 @@ depends-member:
 - ["PSs9AnyObject", "priceInputed"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "round"]
+- !private ["PSs9AnyObject", "scanHexInt"]
 - ["PSs9AnyObject", "segControl"]
 - ["PSs9AnyObject", "segmentLabel"]
 - ["PSs9AnyObject", "segmentSelected"]
@@ -141,6 +156,7 @@ depends-member:
 - !private ["PSs9AnyObject", "stringFromNumber"]
 - !private ["PSs9AnyObject", "tag"]
 - !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "tintColor"]
 - ["PSs9AnyObject", "tipArray"]
 - ["PSs9AnyObject", "tipControl"]
 - ["PSs9AnyObject", "tipLabel"]
@@ -177,27 +193,35 @@ depends-member:
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "init"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "init"]
+- !private ["PSs11CVarArgType", "CGFloat"]
 - !private ["PSs11CVarArgType", "CGRect"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "Double"]
 - !private ["PSs11CVarArgType", "Float"]
 - ["PSs11CVarArgType", "FourPrice"]
+- !private ["PSs11CVarArgType", "Int"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSNumberFormatter"]
 - !private ["PSs11CVarArgType", "NSNumberFormatterStyle"]
+- !private ["PSs11CVarArgType", "NSScanner"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "String"]
 - ["PSs11CVarArgType", "ThreeOrice"]
 - ["PSs11CVarArgType", "TwoPrice"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- ["PSs11CVarArgType", "UIColorFromRGB"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageView"]
 - !private ["PSs11CVarArgType", "UITapGestureRecognizer"]
@@ -216,6 +240,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "contentMode"]
 - !private ["PSs11CVarArgType", "continuous"]
 - ["PSs11CVarArgType", "controlPanel"]
+- !private ["PSs11CVarArgType", "darkGrayColor"]
 - ["PSs11CVarArgType", "defaultPercent"]
 - !private ["PSs11CVarArgType", "deinit"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
@@ -240,6 +265,7 @@ depends-member:
 - ["PSs11CVarArgType", "priceInputed"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "round"]
+- !private ["PSs11CVarArgType", "scanHexInt"]
 - ["PSs11CVarArgType", "segControl"]
 - ["PSs11CVarArgType", "segmentLabel"]
 - ["PSs11CVarArgType", "segmentSelected"]
@@ -253,6 +279,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "stringFromNumber"]
 - !private ["PSs11CVarArgType", "tag"]
 - !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "tintColor"]
 - ["PSs11CVarArgType", "tipArray"]
 - ["PSs11CVarArgType", "tipControl"]
 - ["PSs11CVarArgType", "tipLabel"]
@@ -288,6 +315,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "append"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "CGFloat"]
 - !private ["PSs23CustomStringConvertible", "CGRect"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - !private ["PSs23CustomStringConvertible", "Double"]
@@ -296,14 +324,18 @@ depends-member:
 - ["PSs23CustomStringConvertible", "FourPrice"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "Int"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "NSNumberFormatter"]
 - !private ["PSs23CustomStringConvertible", "NSNumberFormatterStyle"]
+- !private ["PSs23CustomStringConvertible", "NSScanner"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - ["PSs23CustomStringConvertible", "ThreeOrice"]
 - ["PSs23CustomStringConvertible", "TwoPrice"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- ["PSs23CustomStringConvertible", "UIColorFromRGB"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageView"]
 - !private ["PSs23CustomStringConvertible", "UITapGestureRecognizer"]
@@ -325,6 +357,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "contentMode"]
 - !private ["PSs23CustomStringConvertible", "continuous"]
 - ["PSs23CustomStringConvertible", "controlPanel"]
+- !private ["PSs23CustomStringConvertible", "darkGrayColor"]
 - ["PSs23CustomStringConvertible", "defaultPercent"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["PSs23CustomStringConvertible", "dismissKeyboard"]
@@ -348,6 +381,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "priceInputed"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "round"]
+- !private ["PSs23CustomStringConvertible", "scanHexInt"]
 - ["PSs23CustomStringConvertible", "segControl"]
 - ["PSs23CustomStringConvertible", "segmentLabel"]
 - ["PSs23CustomStringConvertible", "segmentSelected"]
@@ -362,6 +396,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "tag"]
 - !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "tintColor"]
 - ["PSs23CustomStringConvertible", "tipArray"]
 - ["PSs23CustomStringConvertible", "tipControl"]
 - ["PSs23CustomStringConvertible", "tipLabel"]
@@ -379,20 +414,25 @@ depends-member:
 - ["PSs23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
+- !private ["PSs9Equatable", "CGFloat"]
 - !private ["PSs9Equatable", "CGRect"]
 - !private ["PSs9Equatable", "CurrencyStyle"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "Double"]
 - !private ["PSs9Equatable", "Float"]
 - ["PSs9Equatable", "FourPrice"]
+- !private ["PSs9Equatable", "Int"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSNumberFormatter"]
 - !private ["PSs9Equatable", "NSNumberFormatterStyle"]
+- !private ["PSs9Equatable", "NSScanner"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "ScaleAspectFit"]
 - !private ["PSs9Equatable", "String"]
 - ["PSs9Equatable", "ThreeOrice"]
 - ["PSs9Equatable", "TwoPrice"]
+- !private ["PSs9Equatable", "UIColor"]
+- ["PSs9Equatable", "UIColorFromRGB"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageView"]
 - !private ["PSs9Equatable", "UITapGestureRecognizer"]
@@ -412,6 +452,7 @@ depends-member:
 - !private ["PSs9Equatable", "contentMode"]
 - !private ["PSs9Equatable", "continuous"]
 - ["PSs9Equatable", "controlPanel"]
+- !private ["PSs9Equatable", "darkGrayColor"]
 - ["PSs9Equatable", "defaultPercent"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - ["PSs9Equatable", "dismissKeyboard"]
@@ -435,6 +476,7 @@ depends-member:
 - ["PSs9Equatable", "priceInputed"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "round"]
+- !private ["PSs9Equatable", "scanHexInt"]
 - ["PSs9Equatable", "segControl"]
 - ["PSs9Equatable", "segmentLabel"]
 - ["PSs9Equatable", "segmentSelected"]
@@ -448,6 +490,7 @@ depends-member:
 - !private ["PSs9Equatable", "stringFromNumber"]
 - !private ["PSs9Equatable", "tag"]
 - !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "tintColor"]
 - ["PSs9Equatable", "tipArray"]
 - ["PSs9Equatable", "tipControl"]
 - ["PSs9Equatable", "tipLabel"]
@@ -471,21 +514,27 @@ depends-member:
 - !private ["PSs17FloatingPointType", "init"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "init"]
 - !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "CGFloat"]
 - !private ["PSs8Hashable", "CGRect"]
 - !private ["PSs8Hashable", "CurrencyStyle"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "Double"]
 - !private ["PSs8Hashable", "Float"]
 - ["PSs8Hashable", "FourPrice"]
+- !private ["PSs8Hashable", "Int"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSNumberFormatter"]
 - !private ["PSs8Hashable", "NSNumberFormatterStyle"]
+- !private ["PSs8Hashable", "NSScanner"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "ScaleAspectFit"]
 - !private ["PSs8Hashable", "String"]
 - ["PSs8Hashable", "ThreeOrice"]
 - ["PSs8Hashable", "TwoPrice"]
+- !private ["PSs8Hashable", "UIColor"]
+- ["PSs8Hashable", "UIColorFromRGB"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageView"]
 - !private ["PSs8Hashable", "UITapGestureRecognizer"]
@@ -505,6 +554,7 @@ depends-member:
 - !private ["PSs8Hashable", "contentMode"]
 - !private ["PSs8Hashable", "continuous"]
 - ["PSs8Hashable", "controlPanel"]
+- !private ["PSs8Hashable", "darkGrayColor"]
 - ["PSs8Hashable", "defaultPercent"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - ["PSs8Hashable", "dismissKeyboard"]
@@ -528,6 +578,7 @@ depends-member:
 - ["PSs8Hashable", "priceInputed"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "round"]
+- !private ["PSs8Hashable", "scanHexInt"]
 - ["PSs8Hashable", "segControl"]
 - ["PSs8Hashable", "segmentLabel"]
 - ["PSs8Hashable", "segmentSelected"]
@@ -541,6 +592,7 @@ depends-member:
 - !private ["PSs8Hashable", "stringFromNumber"]
 - !private ["PSs8Hashable", "tag"]
 - !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "tintColor"]
 - ["PSs8Hashable", "tipArray"]
 - ["PSs8Hashable", "tipControl"]
 - ["PSs8Hashable", "tipLabel"]
@@ -568,17 +620,20 @@ depends-member:
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["Si", "init"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
 - !private ["VSs5Int64", "deinit"]
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "init"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "init"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "init"]
@@ -606,16 +661,21 @@ depends-member:
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "init"]
 - !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "Double"]
 - !private ["PSo8NSCoding", "Float"]
 - ["PSo8NSCoding", "FourPrice"]
+- !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "NSNumberFormatter"]
 - !private ["PSo8NSCoding", "NSNumberFormatterStyle"]
+- !private ["PSo8NSCoding", "NSScanner"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "String"]
 - ["PSo8NSCoding", "ThreeOrice"]
 - ["PSo8NSCoding", "TwoPrice"]
+- !private ["PSo8NSCoding", "UIColor"]
+- ["PSo8NSCoding", "UIColorFromRGB"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageView"]
 - !private ["PSo8NSCoding", "UITapGestureRecognizer"]
@@ -633,6 +693,7 @@ depends-member:
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "continuous"]
 - ["PSo8NSCoding", "controlPanel"]
+- !private ["PSo8NSCoding", "darkGrayColor"]
 - ["PSo8NSCoding", "defaultPercent"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "dismissKeyboard"]
@@ -667,6 +728,7 @@ depends-member:
 - !private ["PSo8NSCoding", "stringFromNumber"]
 - !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", "tipArray"]
 - ["PSo8NSCoding", "tipControl"]
 - ["PSo8NSCoding", "tipLabel"]
@@ -682,19 +744,26 @@ depends-member:
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "darkGrayColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "numberStyle"]
+- !private ["PSo9NSCopying", "scanHexInt"]
 - !private ["PSo9NSCopying", "stringFromNumber"]
+- !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - ["PSo26NSExtensionRequestHandling", "FourPrice"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNumberFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNumberFormatterStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "NSScanner"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - ["PSo26NSExtensionRequestHandling", "ThreeOrice"]
 - ["PSo26NSExtensionRequestHandling", "TwoPrice"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- ["PSo26NSExtensionRequestHandling", "UIColorFromRGB"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
@@ -743,22 +812,28 @@ depends-member:
 - !private ["CSo11NSFormatter", "numberStyle"]
 - !private ["CSo11NSFormatter", "stringFromNumber"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSNumber", "deinit"]
 - !private ["CSo17NSNumberFormatter", "init"]
 - !private ["CSo17NSNumberFormatter", "numberStyle"]
 - !private ["CSo17NSNumberFormatter", "stringFromNumber"]
 - !private ["OSC22NSNumberFormatterStyle", "CurrencyStyle"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "Float"]
 - ["CSo8NSObject", "FourPrice"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSNumberFormatter"]
 - !private ["CSo8NSObject", "NSNumberFormatterStyle"]
+- !private ["CSo8NSObject", "NSScanner"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
-- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "ThreeOrice"]
 - ["CSo8NSObject", "TwoPrice"]
+- ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIColorFromRGB"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
@@ -767,6 +842,7 @@ depends-member:
 - !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "UInt32"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animateWithDuration"]
@@ -781,6 +857,7 @@ depends-member:
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "continuous"]
 - ["CSo8NSObject", "controlPanel"]
+- !private ["CSo8NSObject", "darkGrayColor"]
 - ["CSo8NSObject", "defaultPercent"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "dismissKeyboard"]
@@ -804,6 +881,7 @@ depends-member:
 - ["CSo8NSObject", "priceInputed"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "round"]
+- !private ["CSo8NSObject", "scanHexInt"]
 - ["CSo8NSObject", "segControl"]
 - ["CSo8NSObject", "segmentLabel"]
 - ["CSo8NSObject", "segmentSelected"]
@@ -817,6 +895,7 @@ depends-member:
 - !private ["CSo8NSObject", "stringFromNumber"]
 - !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "tipArray"]
 - ["CSo8NSObject", "tipControl"]
 - ["CSo8NSObject", "tipLabel"]
@@ -831,16 +910,21 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - ["PSo16NSObjectProtocol", "FourPrice"]
+- !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "NSNumberFormatter"]
 - !private ["PSo16NSObjectProtocol", "NSNumberFormatterStyle"]
+- !private ["PSo16NSObjectProtocol", "NSScanner"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - ["PSo16NSObjectProtocol", "ThreeOrice"]
 - ["PSo16NSObjectProtocol", "TwoPrice"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- ["PSo16NSObjectProtocol", "UIColorFromRGB"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageView"]
 - !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
@@ -859,6 +943,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "continuous"]
 - ["PSo16NSObjectProtocol", "controlPanel"]
+- !private ["PSo16NSObjectProtocol", "darkGrayColor"]
 - ["PSo16NSObjectProtocol", "defaultPercent"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "dismissKeyboard"]
@@ -882,6 +967,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "priceInputed"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "round"]
+- !private ["PSo16NSObjectProtocol", "scanHexInt"]
 - ["PSo16NSObjectProtocol", "segControl"]
 - ["PSo16NSObjectProtocol", "segmentLabel"]
 - ["PSo16NSObjectProtocol", "segmentSelected"]
@@ -895,6 +981,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stringFromNumber"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "tipArray"]
 - ["PSo16NSObjectProtocol", "tipControl"]
 - ["PSo16NSObjectProtocol", "tipLabel"]
@@ -910,6 +997,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["CSo9NSScanner", "init"]
+- !private ["CSo9NSScanner", "scanHexInt"]
+- !private ["PSo14NSSecureCoding", "darkGrayColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
@@ -920,6 +1010,7 @@ depends-member:
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "init"]
 - ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
@@ -941,6 +1032,7 @@ depends-member:
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "init"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
 - !private ["PSs16SignedNumberType", "init"]
@@ -975,6 +1067,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "startAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -995,17 +1088,23 @@ depends-member:
 - !private ["PSo12UIAppearance", "startAnimating"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "tintColor"]
 - !private ["PSo12UIAppearance", "value"]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
 - ["PSo21UIAppearanceContainer", "FourPrice"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
 - !private ["PSo21UIAppearanceContainer", "NSNumberFormatter"]
 - !private ["PSo21UIAppearanceContainer", "NSNumberFormatterStyle"]
+- !private ["PSo21UIAppearanceContainer", "NSScanner"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - ["PSo21UIAppearanceContainer", "ThreeOrice"]
 - ["PSo21UIAppearanceContainer", "TwoPrice"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- ["PSo21UIAppearanceContainer", "UIColorFromRGB"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageView"]
 - !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
@@ -1055,6 +1154,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "startAnimating"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
 - ["PSo21UIAppearanceContainer", "tipArray"]
 - ["PSo21UIAppearanceContainer", "tipControl"]
 - ["PSo21UIAppearanceContainer", "tipLabel"]
@@ -1069,16 +1169,24 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "tintColor"]
+- !private ["CSo7UIColor", "darkGrayColor"]
+- !private ["CSo7UIColor", "init"]
+- !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "Double"]
 - !private ["PSo18UIContentContainer", "Float"]
 - ["PSo18UIContentContainer", "FourPrice"]
+- !private ["PSo18UIContentContainer", "Int"]
 - !private ["PSo18UIContentContainer", "NSNumberFormatter"]
 - !private ["PSo18UIContentContainer", "NSNumberFormatterStyle"]
+- !private ["PSo18UIContentContainer", "NSScanner"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "String"]
 - ["PSo18UIContentContainer", "ThreeOrice"]
 - ["PSo18UIContentContainer", "TwoPrice"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- ["PSo18UIContentContainer", "UIColorFromRGB"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageView"]
 - !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
@@ -1151,6 +1259,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "startAnimating"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "alpha"]
@@ -1171,17 +1280,23 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "startAnimating"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
 - !private ["PSo13UIDynamicItem", "value"]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - !private ["PSo18UIFocusEnvironment", "Float"]
 - ["PSo18UIFocusEnvironment", "FourPrice"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
 - !private ["PSo18UIFocusEnvironment", "NSNumberFormatter"]
 - !private ["PSo18UIFocusEnvironment", "NSNumberFormatterStyle"]
+- !private ["PSo18UIFocusEnvironment", "NSScanner"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - ["PSo18UIFocusEnvironment", "ThreeOrice"]
 - ["PSo18UIFocusEnvironment", "TwoPrice"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- ["PSo18UIFocusEnvironment", "UIColorFromRGB"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageView"]
 - !private ["PSo18UIFocusEnvironment", "UITapGestureRecognizer"]
@@ -1231,6 +1346,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "startAnimating"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["PSo18UIFocusEnvironment", "tipArray"]
 - ["PSo18UIFocusEnvironment", "tipControl"]
 - ["PSo18UIFocusEnvironment", "tipLabel"]
@@ -1260,20 +1376,26 @@ depends-member:
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "hidden"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "tintColor"]
 - !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo16UINavigationItem", "titleView"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "Double"]
 - ["CSo11UIResponder", "Float"]
 - ["CSo11UIResponder", "FourPrice"]
+- !private ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSNumberFormatter"]
 - !private ["CSo11UIResponder", "NSNumberFormatterStyle"]
+- !private ["CSo11UIResponder", "NSScanner"]
 - !private ["CSo11UIResponder", "NSUserDefaults"]
-- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "ThreeOrice"]
 - ["CSo11UIResponder", "TwoPrice"]
+- ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIColorFromRGB"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
@@ -1282,6 +1404,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "UInt32"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
@@ -1327,6 +1450,7 @@ depends-member:
 - !private ["CSo11UIResponder", "startAnimating"]
 - !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "tipArray"]
 - ["CSo11UIResponder", "tipControl"]
 - ["CSo11UIResponder", "tipLabel"]
@@ -1349,16 +1473,21 @@ depends-member:
 - !private ["CSo8UISlider", "minimumValue"]
 - !private ["CSo8UISlider", "tag"]
 - !private ["CSo8UISlider", "value"]
+- !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - !private ["PSo16UIStateRestoring", "Float"]
 - ["PSo16UIStateRestoring", "FourPrice"]
+- !private ["PSo16UIStateRestoring", "Int"]
 - !private ["PSo16UIStateRestoring", "NSNumberFormatter"]
 - !private ["PSo16UIStateRestoring", "NSNumberFormatterStyle"]
+- !private ["PSo16UIStateRestoring", "NSScanner"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "String"]
 - ["PSo16UIStateRestoring", "ThreeOrice"]
 - ["PSo16UIStateRestoring", "TwoPrice"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- ["PSo16UIStateRestoring", "UIColorFromRGB"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageView"]
 - !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
@@ -1413,16 +1542,21 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "endEditing"]
 - !private ["PSo17UITextInputTraits", "tag"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - ["PSo18UITraitEnvironment", "FourPrice"]
+- !private ["PSo18UITraitEnvironment", "Int"]
 - !private ["PSo18UITraitEnvironment", "NSNumberFormatter"]
 - !private ["PSo18UITraitEnvironment", "NSNumberFormatterStyle"]
+- !private ["PSo18UITraitEnvironment", "NSScanner"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - ["PSo18UITraitEnvironment", "ThreeOrice"]
 - ["PSo18UITraitEnvironment", "TwoPrice"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- ["PSo18UITraitEnvironment", "UIColorFromRGB"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageView"]
 - !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
@@ -1472,6 +1606,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "startAnimating"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
 - ["PSo18UITraitEnvironment", "tipArray"]
 - ["PSo18UITraitEnvironment", "tipControl"]
 - ["PSo18UITraitEnvironment", "tipLabel"]
@@ -1505,20 +1640,26 @@ depends-member:
 - !private ["CSo6UIView", "startAnimating"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "tintColor"]
 - !private ["CSo6UIView", "value"]
 - !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "Double"]
 - ["CSo16UIViewController", "Float"]
 - ["CSo16UIViewController", "FourPrice"]
+- !private ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSNumberFormatter"]
 - !private ["CSo16UIViewController", "NSNumberFormatterStyle"]
+- !private ["CSo16UIViewController", "NSScanner"]
 - !private ["CSo16UIViewController", "NSUserDefaults"]
-- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "ThreeOrice"]
 - ["CSo16UIViewController", "TwoPrice"]
+- ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIColorFromRGB"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
@@ -1527,6 +1668,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UIView"]
+- !private ["CSo16UIViewController", "UInt32"]
 - ["CSo16UIViewController", "billEdited"]
 - ["CSo16UIViewController", "billField"]
 - ["CSo16UIViewController", "configureDefaultSlider"]
@@ -1576,16 +1718,21 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["C4tips14ViewController", "AnyObject"]
 - ["C4tips14ViewController", "Bool"]
+- !private ["C4tips14ViewController", "CGFloat"]
 - !private ["C4tips14ViewController", "CGRect"]
 - !private ["C4tips14ViewController", "Double"]
 - ["C4tips14ViewController", "Float"]
 - ["C4tips14ViewController", "FourPrice"]
+- !private ["C4tips14ViewController", "Int"]
 - !private ["C4tips14ViewController", "NSNumberFormatter"]
 - !private ["C4tips14ViewController", "NSNumberFormatterStyle"]
+- !private ["C4tips14ViewController", "NSScanner"]
 - !private ["C4tips14ViewController", "NSUserDefaults"]
-- !private ["C4tips14ViewController", "String"]
+- ["C4tips14ViewController", "String"]
 - ["C4tips14ViewController", "ThreeOrice"]
 - ["C4tips14ViewController", "TwoPrice"]
+- ["C4tips14ViewController", "UIColor"]
+- ["C4tips14ViewController", "UIColorFromRGB"]
 - !private ["C4tips14ViewController", "UIImage"]
 - ["C4tips14ViewController", "UIImageView"]
 - ["C4tips14ViewController", "UILabel"]
@@ -1594,6 +1741,7 @@ depends-member:
 - !private ["C4tips14ViewController", "UITapGestureRecognizer"]
 - ["C4tips14ViewController", "UITextField"]
 - ["C4tips14ViewController", "UIView"]
+- !private ["C4tips14ViewController", "UInt32"]
 - ["C4tips14ViewController", "billEdited"]
 - ["C4tips14ViewController", "billField"]
 - ["C4tips14ViewController", "configureDefaultSlider"]
@@ -1653,6 +1801,8 @@ depends-member:
 - !private ["PSs19_CVarArgAlignedType", "init"]
 - !private ["PSs22_CVarArgPassedAsDouble", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "darkGrayColor"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -1664,10 +1814,13 @@ depends-member:
 - !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "init"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "init"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
@@ -1682,6 +1835,7 @@ depends-member:
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "init"]
 - !private ["PSs12_Reflectable", "Distance"]
 - ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
@@ -1711,10 +1865,12 @@ depends-member:
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "tintColor"]
 - !private ["PSs12_Reflectable", "value"]
 - !private ["PSs12_Reflectable", "y"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "init"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "init"]
@@ -1766,10 +1922,12 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSFormatter"
 - !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
 - !private "CSo17NSNumberFormatter"
 - !private "OSC22NSNumberFormatterStyle"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "CSo9NSScanner"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo14NSUserDefaults"
@@ -1791,6 +1949,8 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
@@ -1801,6 +1961,7 @@ depends-nominal:
 - !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
@@ -1834,6 +1995,7 @@ depends-nominal:
 - !private "PSs19_CVarArgAlignedType"
 - !private "PSs22_CVarArgPassedAsDouble"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"
 - !private "PSs24_ImageLiteralConvertible"
 - !private "PSs14_Incrementable"
@@ -1857,4 +2019,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "70b0343d5b104859075a9d8ede3c9745"
+interface-hash: "6fc33b108205bbee87854cd4671be084"

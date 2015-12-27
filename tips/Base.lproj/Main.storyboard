@@ -30,10 +30,6 @@
                                             <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Ga-WA-rEe"/>
                                         </connections>
                                     </slider>
-                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Smile" translatesAutoresizingMaskIntoConstraints="NO" id="7jk-oc-nyM">
-                                        <rect key="frame" x="542" y="181" width="44" height="47"/>
-                                        <animations/>
-                                    </imageView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-V0-Evd">
                                         <rect key="frame" x="23" y="200" width="555" height="29"/>
                                         <animations/>
@@ -120,7 +116,7 @@
                                         <animations/>
                                     </imageView>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJ8-Ua-7tt">
-                                        <rect key="frame" x="19" y="287" width="562" height="171"/>
+                                        <rect key="frame" x="19" y="277" width="562" height="171"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="731-BN-qS7">
                                                 <rect key="frame" x="377" y="0.0" width="185" height="171"/>
@@ -212,6 +208,10 @@
                                             <constraint firstItem="DLV-FW-H0K" firstAttribute="leading" secondItem="xJ8-Ua-7tt" secondAttribute="leading" id="w0U-Yt-tIQ"/>
                                         </constraints>
                                     </view>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Smile" translatesAutoresizingMaskIntoConstraints="NO" id="7jk-oc-nyM">
+                                        <rect key="frame" x="542" y="181" width="44" height="47"/>
+                                        <animations/>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.22348794720767884" green="0.22348794720767884" blue="0.22348794720767884" alpha="1" colorSpace="calibratedRGB"/>
@@ -231,8 +231,8 @@
                                     <constraint firstItem="Hwu-oj-rKm" firstAttribute="leading" secondItem="Jj8-ds-boi" secondAttribute="leading" constant="27" id="sIa-oe-l7k"/>
                                 </constraints>
                             </view>
-                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2VA-7b-pvf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2VA-7b-pvf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="338"/>
                                 <animations/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-jr-kO8">
@@ -267,7 +267,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RE5-KW-rYd">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="e3T-0J-pSi">
-                            <color key="tintColor" red="0.45031540310000001" green="1" blue="0.61892449439999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="IzG-aW-HzI" kind="show" id="qja-yw-vAu"/>
                             </connections>

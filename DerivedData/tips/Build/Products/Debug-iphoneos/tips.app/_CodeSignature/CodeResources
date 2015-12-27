@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		lmKa84lcfMmj6Y9OwGyvUR/cNro=
+		</data>
 		<key>AssetPackManifestTemplate.plist</key>
 		<data>
 		VLzOoksX862cJsc0yRnJdY77mg0=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		5X39KDFwUkftdpBZOHvH6Bu0Wto=
+		ltnf12EPl6agRXOWqQwfv6Pt8Rg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
@@ -43,7 +47,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PZBTh2DGj/aOJlW9oSTa8OSumN8=
+			LcTKiz+uOXHmCLJp2kER9P7u3I0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -61,7 +65,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dfjG95yOvouUgdoOibx86ZiEc7k=
+			tlAaiMnCmX8uLgQHuyDfCXj4h7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -70,7 +74,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2MMHEvDmyiPhc8LtaFA00NbypKo=
+			IZpyizk549cTUQhUCVb0rW1HJfY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -79,7 +83,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qoHLL6M79E6ZCT0ID6dOtu26dI4=
+			UBljTMh0sB9Xpl41lY7/xnuQXNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j3fyCNLKpjrNvYSjuguBXMxawhM=
+		FwtzFbTfLyK+jx8AE1io2pW7N6s=
 		</data>
 		<key>OnDemandResources.plist</key>
 		<data>
@@ -139,13 +143,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		lmKa84lcfMmj6Y9OwGyvUR/cNro=
+		</data>
 		<key>AssetPackManifestTemplate.plist</key>
 		<data>
 		VLzOoksX862cJsc0yRnJdY77mg0=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		5X39KDFwUkftdpBZOHvH6Bu0Wto=
+		ltnf12EPl6agRXOWqQwfv6Pt8Rg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
@@ -178,7 +186,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PZBTh2DGj/aOJlW9oSTa8OSumN8=
+			LcTKiz+uOXHmCLJp2kER9P7u3I0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -196,7 +204,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dfjG95yOvouUgdoOibx86ZiEc7k=
+			tlAaiMnCmX8uLgQHuyDfCXj4h7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -205,7 +213,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2MMHEvDmyiPhc8LtaFA00NbypKo=
+			IZpyizk549cTUQhUCVb0rW1HJfY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -214,7 +222,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qoHLL6M79E6ZCT0ID6dOtu26dI4=
+			UBljTMh0sB9Xpl41lY7/xnuQXNg=
 			</data>
 			<key>optional</key>
 			<true/>
