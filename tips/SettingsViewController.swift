@@ -13,7 +13,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 //    @IBOutlet weak var minPercPicker: UIPickerView!
     
 
-    var pickerDataSource = ["5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%",]
+    var pickerDataSource = ["0%", "5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%",]
     
     @IBOutlet weak var minPicker: UIPickerView!
     

@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var tipArray = [18, 20, 22]
+    
     var sliderValue:Float = 0.2
     
     var defaultPercent:Float  = 0.2
@@ -124,6 +126,12 @@ class ViewController: UIViewController {
         print("view did appear")
         
         let defaults = NSUserDefaults.standardUserDefaults()
+        
+        
+        let hideSlider = defaults.boolForKey("SliderHide")
+        
+
+        
         if(defaultPercent != Float(defaults.integerForKey("Default"))/100.0){
         
             defaultPercent = Float(defaults.integerForKey("Default"))/100.0
@@ -159,6 +167,48 @@ class ViewController: UIViewController {
             
 
         }
+        
+        
+        if(!(segmentLabel.hidden)){
+            print("YOOYOYSODOSYDOYOYSOYDOSYD")
+            print(segmentedTips.selectedSegmentIndex)
+            sliderValue = Float(tipArray[segmentedTips.selectedSegmentIndex])/100
+            print("\(sliderValue)")
+            defaultPercent = sliderValue
+            
+            
+            //                defaultPercent = Float(defaults.integerForKey("Default"))/100.0
+            tipSlider.value = defaultPercent
+            tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
+            
+            
+            
+            var tipPercentage = Double(defaultPercent)
+            var billAmount = 0.0
+            if(billField.text == ""){
+                billAmount = 0.0    }
+            else{
+                billAmount = Double(billField.text!)!
+            }
+            
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+            //        formatter.locale = NSLocale(localeIdentifier: "ja_JP")
+            
+            print(formatter.stringFromNumber(billAmount))
+            //        billField.text = formatter.stringFromNumber(billAmount)!
+            
+            var tip = billAmount * tipPercentage
+            var total = billAmount + tip
+            
+            
+            tipLabel.text = formatter.stringFromNumber(tip)
+            totalLabel.text = formatter.stringFromNumber(total)
+            TwoPrice.text = formatter.stringFromNumber(total/2)
+            ThreeOrice.text = formatter.stringFromNumber(total/3)
+            FourPrice.text = formatter.stringFromNumber(total/4)
+        }
+        
    
         tipSlider.minimumValue = Float(defaults.integerForKey("Minimum"))/100.0
         tipSlider.maximumValue = Float(defaults.integerForKey("Maximum"))/100.0
@@ -217,7 +267,6 @@ class ViewController: UIViewController {
         
         if(sender.tag == 3){
             print("HHHAEHIAEHIHFIHEIFHIEHF")
-            var tipArray = [18, 20, 22]
             sliderValue = Float(tipArray[segmentedTips.selectedSegmentIndex])/100
             print("\(sliderValue)")
             tipPercentLabel.text = String(format: "%.0f %@", sliderValue*100, "%")

@@ -142,6 +142,7 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 
 SWIFT_CLASS("_TtC4tips14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull tipArray;
 @property (nonatomic) float sliderValue;
 @property (nonatomic) float defaultPercent;
 @property (nonatomic) BOOL opened;
