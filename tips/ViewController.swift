@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var defaultPercent:Float  = 0.2
     
     var opened = true
+    
 
     @IBOutlet weak var tipLabel: UILabel!
 
@@ -134,6 +135,7 @@ class ViewController: UIViewController {
         
         if(defaultPercent != Float(defaults.integerForKey("Default"))/100.0){
         
+            print("New Defualt Percent was set")
             defaultPercent = Float(defaults.integerForKey("Default"))/100.0
             tipSlider.value = defaultPercent
             tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
@@ -174,16 +176,17 @@ class ViewController: UIViewController {
             print(segmentedTips.selectedSegmentIndex)
             sliderValue = Float(tipArray[segmentedTips.selectedSegmentIndex])/100
             print("\(sliderValue)")
-            defaultPercent = sliderValue
+            var newVal = sliderValue
+//            defaultPercent = sliderValue
             
             
             //                defaultPercent = Float(defaults.integerForKey("Default"))/100.0
-            tipSlider.value = defaultPercent
-            tipPercentLabel.text = String(format: "%.0f %@", defaultPercent*100, "%")
+            tipSlider.value = newVal
+            tipPercentLabel.text = String(format: "%.0f %@", newVal*100, "%")
             
             
             
-            var tipPercentage = Double(defaultPercent)
+            var tipPercentage = Double(newVal)
             var billAmount = 0.0
             if(billField.text == ""){
                 billAmount = 0.0    }
