@@ -133,12 +133,12 @@ SWIFT_CLASS("_TtC4tips22SettingsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
 @class UILabel;
 @class UITextField;
 @class UISegmentedControl;
 @class UISlider;
 @class UIView;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC4tips14ViewController")
 @interface ViewController : UIViewController
@@ -146,6 +146,7 @@ SWIFT_CLASS("_TtC4tips14ViewController")
 @property (nonatomic) float sliderValue;
 @property (nonatomic) float defaultPercent;
 @property (nonatomic) BOOL opened;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified loadImage;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified tipLabel;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified billField;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified totalLabel;

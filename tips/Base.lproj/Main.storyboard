@@ -18,18 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-jr-kO8">
-                                <rect key="frame" x="0.0" y="72" width="600" height="98"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="82"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="0Ru-zh-p9e"/>
-                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cN0-tV-yRv"/>
-                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cwf-HJ-HZO"/>
-                                    <action selector="priceInputed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ypZ-zd-P2N"/>
-                                </connections>
-                            </textField>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jj8-ds-boi">
                                 <rect key="frame" x="0.0" y="165" width="600" height="452"/>
                                 <subviews>
@@ -243,17 +231,38 @@
                                     <constraint firstItem="Hwu-oj-rKm" firstAttribute="leading" secondItem="Jj8-ds-boi" secondAttribute="leading" constant="27" id="sIa-oe-l7k"/>
                                 </constraints>
                             </view>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2VA-7b-pvf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-jr-kO8">
+                                <rect key="frame" x="0.0" y="72" width="600" height="98"/>
+                                <animations/>
+                                <color key="tintColor" red="0.45031540310000001" green="1" blue="0.61892449439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="82"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="0Ru-zh-p9e"/>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cN0-tV-yRv"/>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cwf-HJ-HZO"/>
+                                    <action selector="priceInputed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ypZ-zd-P2N"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Jj8-ds-boi" firstAttribute="top" secondItem="9eL-jr-kO8" secondAttribute="bottom" constant="20" id="9zV-Lo-qXZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2VA-7b-pvf" secondAttribute="bottom" id="Fu4-zS-qKE"/>
                             <constraint firstItem="9eL-jr-kO8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1N-m7-Cth"/>
                             <constraint firstItem="Nwc-t9-mPN" firstAttribute="top" secondItem="Jj8-ds-boi" secondAttribute="bottom" id="Qcs-7g-kao"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jj8-ds-boi" secondAttribute="trailing" constant="-20" id="faH-Kx-6cg"/>
                             <constraint firstItem="Jj8-ds-boi" firstAttribute="top" secondItem="9eL-jr-kO8" secondAttribute="bottom" constant="8" id="l96-dF-rwp"/>
+                            <constraint firstItem="2VA-7b-pvf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="myq-oH-d3Q"/>
                             <constraint firstItem="Jj8-ds-boi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="wUi-WW-881"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2VA-7b-pvf" secondAttribute="trailing" constant="-20" id="wap-h4-rjT"/>
+                            <constraint firstItem="2VA-7b-pvf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ynJ-VC-NVC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RE5-KW-rYd">
@@ -272,6 +281,7 @@
                         <outlet property="billField" destination="9eL-jr-kO8" id="Ukv-zc-mTh"/>
                         <outlet property="controlPanel" destination="Jj8-ds-boi" id="r43-tg-g6e"/>
                         <outlet property="frownIcon" destination="sEP-6M-1NA" id="CNB-fX-haF"/>
+                        <outlet property="loadImage" destination="2VA-7b-pvf" id="A4a-Qr-Wb4"/>
                         <outlet property="segmentLabel" destination="Wmt-C9-0tV" id="RvN-1d-UAe"/>
                         <outlet property="segmentedTips" destination="ei6-V0-Evd" id="3aV-Zz-7hE"/>
                         <outlet property="serviceLabel" destination="SaM-jE-kRS" id="GvK-Cy-ATd"/>
@@ -289,7 +299,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="868" y="181"/>
+            <point key="canvasLocation" x="868" y="273"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="yKp-PS-zyY">
@@ -427,7 +437,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJz-4E-2pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="181"/>
+            <point key="canvasLocation" x="-480" y="99"/>
         </scene>
     </scenes>
     <resources>

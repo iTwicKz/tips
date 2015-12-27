@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     
     var opened = true
     
+    @IBOutlet weak var loadImage: UIImageView!
 
     @IBOutlet weak var tipLabel: UILabel!
 
@@ -45,7 +47,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedTips: UISegmentedControl!
     
     override func viewDidLoad() {
+        
+        
+        
+        loadImage.animationImages = [UIImage]()
+
+        for var index = 0; index < 71; index++ {
+            var frameName = String(format: "tipsAnimation_%05d", index)
+            loadImage.animationImages?.append(UIImage(named: frameName)!)
+        }
+        
+        loadImage.animationDuration = 3
+        loadImage.animationRepeatCount = 1
+
+        loadImage.startAnimating()
+        
+        
         super.viewDidLoad()
+        
+        
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         self.controlPanel.alpha = 0
@@ -81,8 +102,8 @@ class ViewController: UIViewController {
         // 1
         var nav = self.navigationController?.navigationBar
         // 2
-        nav?.barStyle = UIBarStyle.Black
-        nav?.tintColor = UIColor.greenColor()
+//        nav?.barStyle = UIBarStyle.
+//        nav?.tintColor = UIColor.greenColor()
         // 3
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .ScaleAspectFit
@@ -284,7 +305,7 @@ class ViewController: UIViewController {
             
             if(self.opened){
                 self.controlPanel.center.y = 30
-                self.billField.center = CGPointMake(self.billField.center.x, self.billField.center.y - 100)
+
             }
             self.opened = false
             //self.secondView.alpha = 0
