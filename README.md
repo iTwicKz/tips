@@ -45,7 +45,7 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 ---
 <a id="checklist"></a>
 ## **CodePath Submission Checklist**
-This application was made as prework for admission to CodePath, description for which are [found here](http://courses.codepath.com/snippets/intro_to_ios/prework.md)
+This application was made as prework for admission to CodePath, description for which are [found here](http://courses.codepath.com/snippets/intro_to_ios/prework_university.md)
 
 #### Following is the submission checklist
 > Please review the following checklist to ensure your submission is valid:
