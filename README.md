@@ -29,6 +29,8 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 <a id="screens"></a>
 ## **Screens**
 
+![both screens](ScreensFull.png)
+
 #### Main Screen
 ![screen one](IMG_4737.jpg)
 
