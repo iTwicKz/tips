@@ -5,8 +5,9 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 
 ## Table of Contents
 * [Features](#features)
-* [Screens](#screens)
 * [Video Walthrough](#video)
+* [Screens](#screens)
+* [Submission Checklist](#checklist)
 
 ---
 <a id="features"></a>
@@ -26,6 +27,10 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 * **Animation upon inputting text**
 
 ---
+<a id="video"></a>
+## **Video Walkthrough**
+![gif walkthrough](fullVideoCap.gif)
+---
 <a id="screens"></a>
 ## **Screens**
 
@@ -38,6 +43,23 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 ![screen two](IMG_4738.jpg)
 
 ---
-<a id="video"></a>
-## **Video Walkthrough**
-![gif walkthrough](fullVideoCap.gif)
+<a id="checklist"></a>
+## **CodePath Submission Checklist**
+This application was made as prework for admission to CodePath, description for which are [found here](http://courses.codepath.com/snippets/intro_to_ios/prework.md)
+
+#### Following is the submission checklist
+> Please review the following checklist to ensure your submission is valid:
+
+>> 1. Did you implement both the TipViewController and the SettingsViewController?
+2. Did you successfully push your code to github? Can you see the code on github?
+3. Did you add a README which includes a GIF walkthrough of the app's functionality?
+4. Did you create an issue on the repo and include /cc @codepathreview in the issue body?
+
+#### CheckList
+|  | Requirement | Done? |
+|---|-------------|-------|
+| 1 | TipViewController | YES |
+| 1 | SettingsViewController | YES |
+| 2 | Pushed to GitHub | YES |
+| 3 | Added README | YES |
+| 4 | Create Issue | NO |
