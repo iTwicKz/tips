@@ -4,7 +4,7 @@
 tips is a iOS application that calculates tip based on input bill amount and tip percentage, inputed by either segmented control or slider control
 
 |Created|Tuesday, December 8, 2015 at 6:42 PM|
-|-|-|
+|-------|------------------------------------|
 |Last Commit|Sunday, December 8, 2015 at 8:03 PM|
 
 ## Table of Contents
