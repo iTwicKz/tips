@@ -7,7 +7,9 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 * [Features](#features)
 * [Video Walthrough](#video)
 * [Screens](#screens)
+* [Notes](#notes)
 * [Submission Checklist](#checklist)
+* [CodePath ReadMe](#codePath)
 
 ---
 <a id="features"></a>
@@ -45,6 +47,43 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 ![screen two](IMG_4738.jpg)
 
 ---
+<a id="notes"></a>
+## Notes
+tips is my first, fully functional application that is not simply a front-end mock-up. Most of my time was spent understanding Auto-Layout, creating the UI, and configuring the Swift defaults, switches, etc.
+### Lessons Learned
+* iOS development
+* XCode formatting
+* Defaults
+* iOS UIComponents
+  * Pickers (See settings)
+  * Sliders
+  * Segmented Controller
+* Using images view as video
+* Formatting MarkDown
+
+### Past Skills Used
+* Animation
+* Basic Programming Skills
+* UI Design
+
+#### Design Inspiration
+Inspiration for slider / faces design from [Corey Haggard](https://dribbble.com/shots/1370966-Tips)
+
+#### Images Used
+
+<img src="/tips/Assets.xcassets/Group2.imageset/two201.png" height="48">
+<img src="/tips/Assets.xcassets/Group3.imageset/group58.png" height="53">
+<img src="/tips/Assets.xcassets/Group4.imageset/group57.png" height="68">
+<img src="/tips/Assets.xcassets/Smile.imageset/emoticon85.png" height="52">
+<img src="/tips/Assets.xcassets/Frown.imageset/sad35.png" height="52">
+
+Icons made by [freepick](http://www.flaticon.com/authors/freepik) from [flaticon.com](www.flaticon.com)
+
+
+---
+
+---
+
 <a id="checklist"></a>
 ## **CodePath Submission Checklist**
 This application was made as prework for admission to CodePath, description for which are [found here](http://courses.codepath.com/snippets/intro_to_ios/prework_university.md)
@@ -65,3 +104,71 @@ This application was made as prework for admission to CodePath, description for 
 | 2 | Pushed to GitHub | YES |
 | 3 | Added README | YES |
 | 4 | Create Issue | NO |
+
+---
+<a id="codePath"></a>
+# ReadME Template from CodePath
+# Pre-work - *tips*
+
+**tips** is a tip calculator application for iOS.
+
+Submitted by: **Takashi Wickes**
+
+Time spent: **30** hours spent in total
+
+## User Stories
+
+The following **required** functionality is complete:
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+
+The following **optional** features are implemented:
+- [x] Settings page to change the default tip percentage.
+- [x] UI animations
+- [ ] Remembering the bill amount across app restarts (if <10mins)
+- [x] Using locale-specific currency and currency thousands separators.
+- [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+  - *Not set to allow for bill splitter*
+
+The following **additional** features are implemented:
+
+- [x] Slider Tip Controller
+- [x] UI Improvements
+- [x] Loading Screen Animation
+- [x] Application Icon
+- [x] Settings Switch to change tip controls
+- [x] Bill splitter
+- [x] Change Min and Max of slider (Saved in default)
+- [x] Auto-layout
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='fullVideoCap.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with Quicktime & [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the app.
+Upon starting the application, I had only played with front-end iOS development at HackDuke, not understanding Swift
+
+I added lots of additions to this assignment, curious to play around more with iOS, and the different UIComponents of XCode
+
+For more notes, [check above for the notes of this readme](#notes)
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
