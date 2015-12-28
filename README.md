@@ -3,13 +3,25 @@
 
 tips is a iOS application that calculates tip based on input bill amount and tip percentage, inputed by either segmented control or slider control
 
+|Created|Tuesday, December 8, 2015 at 6:42 PM|
+|-|-|
+|**Last Commit**|**Sunday, December 8, 2015 at 8:03 PM**|
+
 ## Table of Contents
 * [Features](#features)
-* [Video Walthrough](#video)
+* [Video Walkthrough](#video)
 * [Screens](#screens)
 * [Notes](#notes)
+  * [Lessons Learned](#lessons)
+  * [Past Skills Used](#past)
+  * [Design Inspiration](#design)
+  * [Images Used](#images)
 * [Submission Checklist](#checklist)
 * [CodePath ReadMe](#codePath)
+  * [User Stories](#user)
+  * [Video Walkthrough](#walk)
+  * [Notes](#notesCode)
+  * [License](#license)
 
 ---
 <a id="features"></a>
@@ -50,6 +62,8 @@ tips is a iOS application that calculates tip based on input bill amount and tip
 <a id="notes"></a>
 ## Notes
 tips is my first, fully functional application that is not simply a front-end mock-up. Most of my time was spent understanding Auto-Layout, creating the UI, and configuring the Swift defaults, switches, etc.
+
+<a id="lessons"></a>
 ### Lessons Learned
 * iOS development
 * XCode formatting
@@ -60,15 +74,18 @@ tips is my first, fully functional application that is not simply a front-end mo
   * Segmented Controller
 * Using images view as video
 * Formatting MarkDown
-
+*
+<a id="past"></a>
 ### Past Skills Used
 * Animation
 * Basic Programming Skills
 * UI Design
 
+<a id="design"></a>
 #### Design Inspiration
 Inspiration for slider / faces design from [Corey Haggard](https://dribbble.com/shots/1370966-Tips)
 
+<a id="images"></a>
 #### Images Used
 
 <img src="/tips/Assets.xcassets/Group2.imageset/two201.png" height="48">
@@ -114,8 +131,9 @@ This application was made as prework for admission to CodePath, description for 
 
 Submitted by: **Takashi Wickes**
 
-Time spent: **30** hours spent in total
+Time spent: **40** hours spent in total
 
+<a id="user"></a>
 ## User Stories
 
 The following **required** functionality is complete:
@@ -140,6 +158,7 @@ The following **additional** features are implemented:
 - [x] Change Min and Max of slider (Saved in default)
 - [x] Auto-layout
 
+<a id="walk"></a>
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
@@ -148,6 +167,9 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with Quicktime & [LiceCap](http://www.cockos.com/licecap/).
 
+#### HD walkthrough available [on YouTube](https://youtu.be/PGZw1ge-9TI_)
+
+<a id="notesCode"></a>
 ## Notes
 
 Describe any challenges encountered while building the app.
@@ -157,9 +179,10 @@ I added lots of additions to this assignment, curious to play around more with i
 
 For more notes, [check above for the notes of this readme](#notes)
 
+<a id="license"></a>
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2015] [Adam Takashi Wickes]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
